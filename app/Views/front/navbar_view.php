@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top" style="background: linear-gradient(90deg, #000428, #004e92);">
+<nav class="navbar navbar-expand-lg sticky-top navbar-customizado">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="<?= site_url('principal') ?>">
-      <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="Red Bull Racing" height="40" class="me-3">
+      <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="Red Bull Racing" height="40" class="me-2">
       <span class="fw-bold text-uppercase text-warning">Red Bull Racing</span>
     </a>
 
