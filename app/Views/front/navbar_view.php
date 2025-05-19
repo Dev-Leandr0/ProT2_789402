@@ -1,25 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top" style="background: linear-gradient(90deg, #000428, #004e92);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="30"></a>
+    <a class="navbar-brand d-flex align-items-center" href="<?= site_url('principal') ?>">
+      <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="Red Bull Racing" height="40" class="me-3">
+      <span class="fw-bold text-uppercase text-warning">Red Bull Racing</span>
+    </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="/quienes-somos">Quiénes Somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/acerca">Acerca de</a></li>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white fw-semibold" href="<?= site_url('principal') ?>">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold" href="/quienes-somos">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold" href="/acerca">Acerca de</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Usuarios</a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+            Usuarios
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="/registrarse">Registrarse</a></li>
             <li><a class="dropdown-item" href="/login">Login</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscar...">
-        <button class="btn btn-outline-light" type="submit">Buscar</button>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 border-0 shadow-sm" type="search" placeholder="Buscar..." aria-label="Buscar">
+        <button class="btn btn-danger fw-bold" type="submit">Buscar</button>
       </form>
     </div>
   </div>
