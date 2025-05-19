@@ -3,9 +3,55 @@
   --secundario-color: #000428;
   --terciario-color: #004e92;
   --fondo-opaco-color: rgba(0, 0, 0, 0.5);
+  --fondo-opaco-secundario-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ------ Configuración Sección Banner principal.php ------- */
+/* ------------------------------------------------------ */
+
+/* ------ Configuración de la barra de navegación ------ */
+.navbar-customizado {
+  background: linear-gradient(90deg, var(--secundario-color), var(--terciario-color));
+  box-shadow: 0 4px 6px var(--fondo-opaco-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.7rem;
+  margin-left: 2rem;
+  line-height: 1.6;
+}
+
+.nav-link:hover {
+  background-color: var(--fondo-opaco-secundario-color);
+  border-radius: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-customizado .dropdown-menu {
+  background: rgba(0, 30, 70, 0.9);
+  box-shadow: 0 4px 8px var(--fondo-opaco-secundario-color);
+  border-radius: 1rem;
+}
+
+.navbar-customizado .dropdown-item {
+  color: #e0e7ff;
+  transition: background-color 0.3s ease;
+  padding: 0.6rem 0.6rem;
+  border-radius: 1rem;
+  margin-top: 0.2rem;
+}
+
+.navbar-customizado .dropdown-item:focus {
+  background-color: #004e92;
+  color: white;
+}
+
+/* ------ Fin configuración de la barra de navegación ------ */
+
+/* --------------------------------------------------------- */
+
+/*------------- Configuración de la Sección Banner ----------*/
 .banner-carrusel {
   position: relative;
   padding: 0;
