@@ -1,0 +1,41 @@
+:root {
+  --primario-color: #dc3545;
+  --secundario-color: #000428;
+  --terciario-color: #004e92;
+  --fondo-opaco-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------ Configuración Sección Banner principal.php ------- */
+.banner-carrusel {
+  position: relative;
+  padding: 0;
+}
+
+/* Fondo opaco del fondo banner*/
+.banner-contenido {
+  background-color: var(--fondo-opaco-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Configuración de titulo h2 banner */
+.banner-contenido h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--primario-color);
+}
+
+/* configuración de párrafo banner */
+.banner-contenido p {
+  font-size: 1.25rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.banner-carrusel .carousel-item img {
+  max-height: 650px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ------ Fin configuración banner ------ */
