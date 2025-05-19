@@ -10,14 +10,6 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/banner/banner-2.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
-        <div class="carousel-caption banner-contenido">
-          <h2>¿Sabías que?</h2>
-          <p>Red Bull Racing es pionero en innovación tecnológica en la Fórmula 1</p>
-          <a href="#" class="btn btn-danger btn-lg">Más información</a>
-        </div>
-      </div>
-      <div class="carousel-item">
         <img src="assets/img/banner/banner-3.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
         <div class="carousel-caption banner-contenido">
           <h2>¿Sabías que?</h2>
