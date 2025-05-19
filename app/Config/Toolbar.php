@@ -56,6 +56,16 @@ class Toolbar extends BaseConfig
 
     /**
      * --------------------------------------------------------------------------
+     * Save Data
+     * --------------------------------------------------------------------------
+     *
+     * If true, the toolbar data will be saved to writable/debugbar.
+     * If false, it will not be saved.
+     */
+    public bool $saveData = false;
+
+    /**
+     * --------------------------------------------------------------------------
      * Max History
      * --------------------------------------------------------------------------
      *
@@ -117,6 +127,12 @@ class Toolbar extends BaseConfig
      * @var list<string>
      */
     public array $watchedExtensions = [
-        'php', 'css', 'js', 'html', 'svg', 'json', 'env',
+        'php',
+        'css',
+        'js',
+        'html',
+        'svg',
+        'json',
+        'env',
     ];
 }
