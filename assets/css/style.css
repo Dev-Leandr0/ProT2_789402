@@ -85,3 +85,50 @@
 }
 
 /* ------ Fin configuración banner ------ */
+
+/* --------------------------------------------------------- */
+
+/*---------------- Configuración de la sección equipo --------*/
+.seccion-equipo {
+  padding: 1rem 1rem;
+}
+
+.titulo-equipo {
+  font-size: 2.5rem;
+  color: var(--secundario-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.seccion-equipo .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.seccion-equipo .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seccion-equipo .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.seccion-equipo .card-body {
+  padding: 1rem;
+}
+
+.seccion-equipo .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-equipo .card-text {
+  font-size: 1rem;
+}
+
+
+/* ------ Fin configuración sección equipo------ */
