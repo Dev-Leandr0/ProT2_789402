@@ -2,8 +2,8 @@
   <div class="footer-container">
     <div class="footer-logo">
       <a href="/" class="footer-marca">
-        <img src="assets/img/logo/logo-4.jpg" alt="Red Bull Racing" height="40">
-        <span>Red Bull Racing</span>
+        <img src="assets/img/logo/logo-4.jpg" alt="Red Bull Racing" height="50">
+        <h5>Red <span class="texto-amarillo">Bull</span> Racing</h5>
       </a>
       <p class="footer-description">
         Velocidad, innovación y pasión por la Fórmula 1. Vive la emoción con nosotros.
@@ -34,7 +34,9 @@
   <hr class="footer-separator">
   <p class="footer-copy">© 2025 Oracle Red Bull Racing. Todos los derechos reservados.</p>
 </footer>
+
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
