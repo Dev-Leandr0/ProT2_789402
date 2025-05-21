@@ -20,7 +20,16 @@
 
 body {
   background-color: var(--fondo-principal);
+  font-family: 'Rajdhani', sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* ------------------------------------------------------ */
@@ -83,8 +92,6 @@ body {
 
 /* Configuración de titulo h2 banner */
 .banner-contenido h2 {
-  font-weight: bold;
-  font-size: 2.5rem;
   color: var(--color-primario);
 }
 
@@ -123,10 +130,8 @@ body {
 }
 
 .historia-contenido h2 {
-  font-size: 2rem;
   color: var(--color-primario);
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .historia-contenido p {
@@ -158,15 +163,15 @@ body {
 }
 
 .titulo-equipo {
-  font-size: 2.5rem;
-  color: var(--color-secundario);
+  color: var(--color-primario);
   margin-bottom: 1rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .seccion-equipo .card-img-top {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -228,7 +233,7 @@ body {
 .footer {
   background: linear-gradient(135deg, var(--color-secundario), var(--color-terciario));
   color: var(--texto-color-primario);
-  padding: 3rem 1rem 2rem;
+  padding: 2.5rem 1rem 1rem;
 }
 
 .footer-container {
@@ -254,6 +259,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.texto-amarillo {
+  color: var(--titulo-color-secundario);
+}
+
 .footer-description {
   color: var(--texto-color-secundario);
   font-size: 0.95rem;
@@ -262,7 +271,6 @@ body {
 
 .footer-links h5,
 .footer-social h5 {
-  text-transform: uppercase;
   color: var(--titulo-color-secundario);
   margin-bottom: 1rem;
 }
@@ -305,7 +313,7 @@ body {
 .footer-separator {
   border: none;
   border-top: 1px solid var(--color-primario);
-  margin: 2rem 0 1rem;
+  margin: 0.5rem 0 1rem;
 }
 
 .footer-copy {
