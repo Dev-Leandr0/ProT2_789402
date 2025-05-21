@@ -80,10 +80,10 @@
     <!--Hannah Schmitz -->
     <div class="col-md-4 mb-4">
       <div class="card bg-dark text-white border-0 shadow-lg">
-        <img src="assets/img/perfil/Hannah-Schmitz-2.jpg" class="card-img-top" alt="Pierre Waché">
+        <img src="assets/img/perfil/Hannah-Schmitz-1.jpg" class="card-img-top" alt="Pierre Waché">
         <div class="card-body">
           <h5 class="card-title text-warning">Hannah Schmitz</h5>
-          <p class="card-text">Ingeniera jefe de estrategia en Red Bull Racing.</p>
+          <p class="card-text"> Ingeniera jefe de estrategia principal en Red Bull Racing. </p>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
         <div class="card-body">
           <i class="bi bi-speedometer2 text-primary fs-1"></i>
           <h5 class="card-title mt-3">Récords de Velocidad</h5>
-          <p class="card-text">Velocidades récord alcanzadas en pistas legendarias.</p>
+          <p class="card-text">Velocidades récord alcanzadas en pistas.</p>
         </div>
       </div>
     </div>
@@ -189,6 +189,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Lista de cambios 19/05
  - Cambiar tamaño img nuestra historia  
