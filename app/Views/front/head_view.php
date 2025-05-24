@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Red Bull Racing</title>
-  <link rel="shortcut icon" href="assets/img/logo/logo-3.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/icons/logo/logo-3.png" type="image/x-icon">
   <!-- Dependencia Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
