@@ -1,0 +1,198 @@
+/*________________________________________________________*/
+/*                     Monoplaza.php                      */
+/*________________________________________________________*/
+
+
+.titulo-seccion {
+  margin: 5rem 5rem 1rem 5rem;
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+/* Contenedor de las tarjetas (grid) */
+.grid-partes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+  margin-bottom: 3.4rem;
+}
+
+/* Las tarjetas */
+.parte {
+  background-color: #0d1b2a;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Config imagen */
+.parte img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 2px solid #fcb900;
+
+}
+
+/* Aspecto estéticos */
+.parte:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(225, 7, 0, 0.621);
+}
+
+/* Config Textos */
+.parte h3 {
+  color: #fcb900;
+  margin: 0.5rem 0;
+}
+
+.parte p {
+  color: #f0f0f0;
+}
+
+/* Responsi Sección 2: Componentes principales*/
+
+/* Para tablets sw mostrará 2 columnas */
+@media (max-width: 992px) {
+  .grid-partes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Para móviles se mostrara 1 columna */
+@media (max-width: 576px) {
+  .grid-partes {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+
+  .parte {
+    padding: 1.2rem;
+  }
+
+  .parte h3 {
+    font-size: 1.1rem;
+  }
+
+  .parte p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ----------------------------------------- */
+
+/* Inicio Configuración Neumáticos */
+
+/* Contenedor principal*/
+.neumaticos .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Configuración de filas */
+.grid-neumaticos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Configuración mini contenedor */
+.neumatico {
+  display: flex;
+  /* border: 2px solid #888; */
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+/* Config img */
+.neumatico img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+@keyframes girarRueda {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.neumatico img:hover {
+  animation: girarRueda 1s linear infinite;
+}
+
+/* Contenedor de los textos  */
+.contenido-neumatico {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 30px;
+}
+
+/* Inicio Configuration de los textos  */
+.container h2 {
+  color: var(--titulo-color-primario);
+}
+
+.contenido-neumatico h3 {
+  color: var(--titulo-color-secundario);
+}
+
+.contenido-neumatico p {
+  margin: 0;
+  line-height: 1.4;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
+/* Responsi Sección Neumáticos */
+@media (max-width: 768px) {
+  .neumatico {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .neumatico>img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Scrollbar general */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #da291c, #0033a0);
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ffcc00, #da291c);
+}
