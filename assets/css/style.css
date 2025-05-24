@@ -4,7 +4,7 @@
   --color-secundario: rgba(0, 4, 40, 1);
   --color-terciario: rgba(0, 78, 146, 1);
   /* fondos */
-  --fondo-principal: rgba(248, 249, 250, 1);
+  --fondo-principal: linear-gradient(to bottom right, #f4f6fa, #dbe3ee);
   --fondo-opaco: rgba(0, 0, 0, 0.5);
   --fondo-navbar: rgba(0, 30, 70, 0.9);
   --fondo-navbar-secundario: rgba(0, 78, 146, 1);
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: var(--fondo-principal);
+  background: var(--fondo-principal);
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -32,7 +32,9 @@ h5 {
   text-transform: uppercase;
 }
 
-/* ------------------------------------------------------ */
+/*________________________________________________________*/
+/*                     navbar_view.php                    */
+/*________________________________________________________*/
 
 /* ------ Configuración de la barra de navegación ------ */
 .navbar-customizado {
@@ -42,18 +44,21 @@ h5 {
   padding: 0.5rem;
 }
 
+/* Separación link */
 .navbar-nav .nav-link {
   padding: 0.7rem;
   margin-left: 2rem;
   line-height: 1.6;
 }
 
+/* Estética link */
 .nav-link:hover {
   background-color: var(--fondo-navbar-opaco);
   border-radius: 1rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Config Menu desplegable */
 .navbar-customizado .dropdown-menu {
   background: var(--fondo-navbar);
   box-shadow: 0 4px 8px var(--fondo-navbar-opaco);
@@ -73,14 +78,48 @@ h5 {
   color: var(--texto-color-primario);
 }
 
+/* Estilo del botón login/registrar */
+.btn-login-icon {
+  background: linear-gradient(to bottom, #da291c, #0033a0);
+  border: none;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  color: white;
+}
+
+.btn-login-icon:hover {
+  background: linear-gradient(to bottom, #ffcc00, #da291c);
+}
+
+.btn-buscar-icon {
+  background: linear-gradient(to bottom, #da291c, #0033a0);
+  border: none;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  color: white;
+}
+
+.btn-buscar-icon:hover {
+  background: linear-gradient(to bottom, #ffcc00, #da291c);
+}
+
 /* ------ Fin configuración de la barra de navegación ------ */
 
-/* --------------------------------------------------------- */
+/*________________________________________________________*/
+/*                     principal.php                      */
+/*________________________________________________________*/
 
 /*------------- Sección 1 - Inicio Configuración de la Sección Banner ----------*/
 .banner-carrusel {
   position: relative;
   padding: 0;
+  background: var(--fondo-principal);
 }
 
 /* Fondo opaco del fondo banner*/
@@ -90,18 +129,19 @@ h5 {
   border-radius: 1rem;
 }
 
-/* Configuración de titulo h2 banner */
+/* Configuración del titulo h2 banner */
 .banner-contenido h2 {
   color: var(--color-primario);
 }
 
-/* configuración de párrafo banner */
+/* configuración del párrafo banner */
 .banner-contenido p {
   font-size: 1.25rem;
   color: var(--texto-color-primario);
   line-height: 1.6;
 }
 
+/* configuración de la img */
 .banner-carrusel .carousel-item img {
   max-height: 650px;
   width: 100%;
@@ -114,6 +154,7 @@ h5 {
 
 /* ------ Sección 2 - Inicio Configuración Nuestra Historia ------ */
 
+/* CConfiguration del contenedor */
 .nuestra-historia {
   display: flex;
   flex-wrap: wrap;
@@ -121,14 +162,15 @@ h5 {
   justify-content: center;
   padding: 2rem 2rem 0 2rem;
   margin: 2rem 0;
-  background-color: var(--fondo-principal);
 }
 
+/* Configuration del mini contenedor */
 .historia-contenido {
   flex: 1 1 400px;
   padding: 1rem;
 }
 
+/* Configuración de textos */
 .historia-contenido h2 {
   color: var(--color-primario);
   margin-bottom: 1rem;
@@ -140,6 +182,7 @@ h5 {
   color: var(--texto-color-terciario);
 }
 
+/* Configuration img */
 .historia-imagen {
   flex: 1 1 300px;
   padding: 1rem;
@@ -158,10 +201,13 @@ h5 {
 /* --------------------------------------------------------- */
 
 /*---------------- Sección 3 - Inicio Configuración de la sección equipo --------*/
+
+/* Contenedor principal */
 .seccion-equipo {
   padding: 1rem 1rem;
 }
 
+/* Titulo principal de contenedor*/
 .titulo-equipo {
   color: var(--color-primario);
   margin-bottom: 1rem;
@@ -169,6 +215,7 @@ h5 {
   text-transform: uppercase;
 }
 
+/* Config imagen */
 .seccion-equipo .card-img-top {
   width: 100%;
   height: 300px;
@@ -176,19 +223,7 @@ h5 {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.seccion-equipo .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.seccion-equipo .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
-}
-
-.seccion-equipo .card-body {
-  padding: 1rem;
-}
-
+/* Config Textos de las cards */
 .seccion-equipo .card-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -199,35 +234,27 @@ h5 {
   font-size: 1rem;
 }
 
+/* Config estéticos de las cards */
+.seccion-equipo .card {
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.seccion-equipo .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(225, 7, 0, 0.668);
+}
+
+.seccion-equipo .card-body {
+  padding: 1rem;
+}
+
 /* ---------------- Fin configuración sección equipo ----------------- */
 
 /* --------------------- Seccion 5 Bootstrap puro ------------------------------ */
 
-/*------------ Sección 4 - Inicio Configuración de la sección Sobre nosotros ------------ */
-.video-fondo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.capa-oscura {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 0;
-}
-
-.contenedor-mapa {
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 0 20px var(--fondo-opaco);
-}
+/*________________________________________________________*/
+/*                     footer_view.php                    */
+/*________________________________________________________*/
 
 /* Inicio configuracion footer */
 .footer {
@@ -236,6 +263,7 @@ h5 {
   padding: 2.5rem 1rem 1rem;
 }
 
+/* Config contenedor prncipal */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -244,11 +272,7 @@ h5 {
   gap: 2rem;
 }
 
-.footer-logo img {
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-
+/* Config columna img logo RDB */
 .footer-marca {
   display: flex;
   align-items: center;
@@ -259,6 +283,13 @@ h5 {
   margin-bottom: 1rem;
 }
 
+/* Logo RDB  */
+.footer-logo img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Config textos */
 .texto-amarillo {
   color: var(--titulo-color-secundario);
 }
@@ -275,6 +306,7 @@ h5 {
   margin-bottom: 1rem;
 }
 
+/* Config lista */
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -295,11 +327,13 @@ h5 {
   color: var(--titulo-color-secundario);
 }
 
+/* Congig columna 3 social icons */
 .social-icons {
   display: flex;
   gap: 1rem;
 }
 
+/* Config estetica */
 .social-icons a {
   font-size: 1.5rem;
   color: var(--texto-color-secundario);
@@ -310,6 +344,15 @@ h5 {
   color: var(--texto-color-primario);
 }
 
+.social-icons img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Config Copy */
 .footer-separator {
   border: none;
   border-top: 1px solid var(--color-primario);
@@ -321,4 +364,140 @@ h5 {
   color: var(--texto-color-secundario);
   font-size: 0.85rem;
   margin: 0;
+}
+
+/*________________________________________________________*/
+/*                     contacto.php                       */
+/*________________________________________________________*/
+
+/* Titulo debajo del banner */
+.contacto-redes h2 {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--titulo-color-primario);
+}
+
+/* Posicionamiento icons */
+.redes-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Config imagen icons tamaño */
+.redes-iconos img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+/* Config estética */
+.redes-iconos a {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.redes-iconos a:hover {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
+
+/*------------ Sección 2 - Inicio Configuración "Únete a nuestra escudería" form ------------ */
+
+/* Contenedor principal */
+.formulario-contacto {
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Solucion a bootstrap */
+.formulario-contacto .titulo-formulario {
+  color: var(--titulo-color-secundario);
+}
+
+.titulo-formulario {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  background-image: linear-gradient(to right, #0033a0, #da291c);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: bottom left;
+}
+
+/* Config Label */
+.campo-formulario {
+  border: none;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+  font-size: 1.2rem;
+  background: linear-gradient(to bottom right, #f4f6fa, #dbe3ee);
+}
+
+/* Config botones */
+
+/* Botón Enviar */
+.btn-enviar {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #b51e15;
+  transform: scale(1.05);
+}
+
+/* Botón Borrar */
+.btn-borrar {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-borrar:hover {
+  background: var(--fondo-principal);
+  color: #0033a0;
+  transform: scale(1.05);
+}
+
+/*------------ Sección 3 - Inicio Configuración Encontranos / Mapa ------------ */
+
+/* Config video fondo */
+.video-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Config capa gris */
+.capa-oscura {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* mapa */
+.contenedor-mapa {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px var(--fondo-opaco);
 }
