@@ -8,4 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('principal', 'Home::index');
 $routes->get('monoplaza', 'Home::monoplaza');
-// $routes->get('noticias', 'Home::noticias');
+$routes->get('contacto', 'Home::contacto');
