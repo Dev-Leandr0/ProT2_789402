@@ -4,7 +4,7 @@
   <div id="banner-carrusel-principal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/img/banner/banner-1.jpg" class="d-block w-100" alt="Bienvenidos Oracle Red Bull Racing">
+        <img src="assets/img/banner/principal/banner-1.jpg" class="d-block w-100" alt="Bienvenidos Oracle Red Bull Racing">
         <div class="carousel-caption banner-contenido">
           <h2>Bienvenidos</h2>
           <p>Oracle Red Bull Racing - Potencia y pasión en cada vuelta</p>
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/banner/banner-3.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+        <img src="assets/img/banner/principal/banner-2.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
         <div class="carousel-caption banner-contenido">
           <h2>¿Sabías que?</h2>
           <p>Red Bull Racing es pionero en innovación tecnológica en la Fórmula 1</p>
@@ -34,7 +34,7 @@
  - Ajustar imagen -->
 <section class="nuestra-historia">
   <div class="historia-contenido">
-    <h2>Nuestra Historia</h2>
+    <h2 class="border-bottom border-danger pb-2">Sobre Nosotros</h2>
     <p>
       Desde sus humildes comienzos hasta convertirse en una potencia de la Fórmula 1,
       Red Bull Racing ha demostrado que la pasión, la innovación y el trabajo en equipo
@@ -46,7 +46,7 @@
     </p>
   </div>
   <div class="historia-imagen">
-    <img src="assets/img/logo/logo-4.jpg" alt="Nuestra Historia">
+    <img src="assets/img/icons/logo/logo-4.jpg" alt="Nuestra Historia">
   </div>
 </section>
 
@@ -59,7 +59,7 @@
   <div class="row">
     <!-- Christian Horner -->
     <div class="col-md-4 mb-4">
-      <div class="card bg-dark text-white border-0 shadow-lg">
+      <div class="card bg-dark text-white border-0">
         <img src="assets/img/perfil/Christian-Horner-3.jpg" class="card-img-top" alt="Christian Horner">
         <div class="card-body">
           <h5 class="card-title text-primary">Christian Horner</h5>
@@ -69,7 +69,7 @@
     </div>
     <!-- Pierre Waché -->
     <div class="col-md-4 mb-4">
-      <div class="card bg-dark text-white border-0 shadow-lg">
+      <div class="card bg-dark text-white border-0">
         <img src="assets/img/perfil/Pierre-Waché-2.jpg" class="card-img-top" alt="Pierre Waché">
         <div class="card-body">
           <h5 class="card-title text-warning">Pierre Waché</h5>
@@ -79,10 +79,10 @@
     </div>
     <!--Hannah Schmitz -->
     <div class="col-md-4 mb-4">
-      <div class="card bg-dark text-white border-0 shadow-lg">
+      <div class="card bg-dark text-white border-0">
         <img src="assets/img/perfil/Hannah-Schmitz-1.jpg" class="card-img-top" alt="Pierre Waché">
         <div class="card-body">
-          <h5 class="card-title text-warning">Hannah Schmitz</h5>
+          <h5 class="card-title text-danger">Hannah Schmitz</h5>
           <p class="card-text"> Ingeniera jefe de estrategia principal en Red Bull Racing. </p>
         </div>
       </div>
@@ -147,43 +147,6 @@
           <i class="bi bi-speedometer2 text-primary fs-1"></i>
           <h5 class="card-title mt-3">Récords de Velocidad</h5>
           <p class="card-text">Velocidades récord alcanzadas en pistas.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Seccion 5 - Sobre nosotros - Mapa "Bootstrap + style.css" -->
-<!-- completado 100% -->
-<section class="seccion-sobre-nosotros position-relative overflow-hidden text-white">
-
-  <video autoplay muted loop playsinline class="video-fondo" aria-hidden="true">
-    <source src="assets/img/video.mp4" type="video/mp4">
-    Tu navegador no soporta videos HTML5.
-  </video>
-
-  <!-- Aqui ira una capa gris 19/05 -->
-  <div class="capa-oscura"></div>
-
-  <div class="container py-5 position-relative z-1" data-aos="fade-up" data-aos-duration="1000">
-    <div class="row align-items-center">
-      <!-- Información posible cambio aquí 20/05-->
-      <div class="col-md-7">
-        <h1 class="display-4 fw-bold text-danger text-uppercase">Sobre Nosotros</h1>
-        <p class="lead">
-          Bienvenido al mundo de <strong>Oracle Red Bull Racing</strong>. Aquí vivimos a toda velocidad, compartiendo todo sobre nuestros autos, pilotos y victorias. 🚀
-        </p>
-        <ul class="list-unstyled fs-5">
-          <li><i class="bi bi-geo-alt-fill text-warning"></i> Red Bull Technology Campus, Milton Keynes</li>
-          <li><i class="bi bi-envelope-fill text-warning"></i> info@redbullracing.com</li>
-          <li><i class="bi bi-lightning-charge-fill text-warning"></i> Pura innovación en la pista</li>
-        </ul>
-      </div>
-      <!-- Mapa -->
-      <div class="col-md-5">
-        <div class="contenedor-mapa">
-          <iframe src="https://maps.google.com/maps?q=Red%20Bull%20Technology%20Campus%2C%20Milton%20Keynes&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
