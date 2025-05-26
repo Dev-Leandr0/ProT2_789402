@@ -166,7 +166,7 @@ h5 {
 /* =================================================== */
 
 /*------------- Sección 1 - Inicio Configuración de la Sección Banner ----------*/
-.banner-carrusel {
+.seccion-banner-carrusel {
   position: relative;
   padding: 0;
   background: var(--fondo-principal);
@@ -192,7 +192,7 @@ h5 {
 }
 
 /* configuración de la img */
-.banner-carrusel .carousel-item img {
+.seccion-banner-carrusel .carousel-item img {
   max-height: 650px;
   width: 100%;
   object-fit: cover;
@@ -203,7 +203,7 @@ h5 {
 /* ------ Sección 2 - Inicio Configuración Nuestra Historia ------ */
 
 /* CConfiguration del contenedor principal*/
-.nuestra-historia {
+.seccion-nuestra-historia {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -249,50 +249,51 @@ h5 {
 /*---------------- Sección 3 - Inicio Configuración de la sección equipo --------*/
 
 /* Contenedor principal */
-.seccion-equipo {
-  padding: 1rem 1rem;
+#nuestro-equipo {
+  padding: 1rem;
 }
 
-/* Titulo principal de contenedor*/
-.titulo-equipo {
+/* Título principal del contenedor */
+#nuestro-equipo .titulo-equipo {
   color: var(--color-primario);
   margin-bottom: 1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* Config imagen */
-.seccion-equipo .card-img-top {
+/* Imagen dentro de la card */
+#nuestro-equipo .card-img-top {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-/* Config Textos de las cards */
-.seccion-equipo .card-title {
+/* Texto de la card */
+#nuestro-equipo .card-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.seccion-equipo .card-text {
-  font-size: 1rem;
+#nuestro-equipo .card-text {
+  font-size: 1.1rem;
 }
 
-/* Config estéticos de las cards */
-.seccion-equipo .card {
+/* Estética general de las cards */
+#nuestro-equipo .card {
   transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
-.seccion-equipo .card:hover {
+#nuestro-equipo .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(225, 7, 0, 0.668);
 }
 
-.seccion-equipo .card-body {
+#nuestro-equipo .card-body {
   padding: 1rem;
 }
+
 
 /* --------------------- Seccion 5 Bootstrap puro ------------------------------ */
 
@@ -483,10 +484,17 @@ h5 {
 /* Seccion 3: Neumáticos */
 
 /* Contenedor principal*/
-.neumaticos .container {
+.seccion-neumaticos .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.seccion-neumaticos .parrafo-neumatico {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 /* Configuración de filas */
@@ -539,6 +547,13 @@ h5 {
 /* Inicio Configuration de los textos  */
 .container h2 {
   color: var(--titulo-color-primario);
+}
+
+.container p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .contenido-neumatico h3 {
@@ -606,7 +621,7 @@ h5 {
 /* =================================================== */
 
 /* Titulo debajo del banner */
-.contacto-redes h2 {
+.seccion-contacto-redes h2 {
   padding: 2rem;
   text-align: center;
   margin-top: 2.9rem;
