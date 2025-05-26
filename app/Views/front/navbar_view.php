@@ -37,14 +37,14 @@
         </li>
       </ul>
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 border-0 shadow-sm" type="search" placeholder="Buscar..." aria-label="Buscar">
+      <form class="d-flex" role="search" id="formulario-busqueda">
+        <input class="form-control me-2 border-0 shadow-sm" type="search" placeholder="Buscar..." aria-label="Buscar" id="entrada-busqueda">
         <button class="btn btn-danger fw-bold btn-buscar-icon" type="submit">Buscar</button>
         <button type="button" class="btn btn-outline-light ms-3 btn-login-icon" data-bs-toggle="modal" data-bs-target="#loginModal">
           <i class="bi bi-person-circle fs-6"></i>
         </button>
-
       </form>
+
     </div>
   </div>
 </nav>
