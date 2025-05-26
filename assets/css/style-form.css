@@ -1,10 +1,15 @@
+/* ==================================================
+   VARIABLES GLOBALES
+===================================================== */
 :root {
-  /* Paleta */
   --color-primario: rgba(220, 53, 69, 1);
   --color-secundario: rgba(0, 4, 40, 1);
   --color-terciario: rgba(0, 78, 146, 1);
 }
 
+/* ==================================================
+   CONTENEDOR PRINCIPAL
+================================================== */
 .modal {
   position: fixed;
   top: 0;
@@ -15,11 +20,17 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* ==================================================
+   CAJA CENTRADA DEL MODAL
+================================================== */
 .modal-dialog {
   margin: 5% auto;
   max-width: 400px;
 }
 
+/* ==================================================
+   ESTILOs
+================================================== */
 .modal-content {
   background: linear-gradient(90deg, var(--color-secundario), var(--color-terciario));
   color: white;
@@ -28,6 +39,9 @@
   border: none;
 }
 
+/* ==================================================
+   HEADER
+================================================== */
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +58,9 @@
   border-color: white;
 }
 
+/* ==================================================
+   FORMULARIO: LABELS
+================================================== */
 .modal-body {
   margin-top: 15px;
 }
@@ -64,6 +81,7 @@
   border: 1px solid #ccc;
 }
 
+/* Opciones Olvidé mi contraseña */
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -77,6 +95,7 @@
   text-decoration: none;
 }
 
+/* bOTON enviar */
 .btn-submit {
   width: 100%;
   padding: 10px;
@@ -91,6 +110,9 @@
   background-color: var(--color-terciario);
 }
 
+/* ==================================================
+   REGISTRO: ENLACE A CREAR CUENTA
+================================================== */
 .registro {
   text-align: center;
   font-size: 0.9rem;
