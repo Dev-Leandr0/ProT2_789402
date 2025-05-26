@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-logo">
-      <a href="/" class="footer-marca">
+      <a href="<?= site_url('principal') ?>" class="footer-marca">
         <img src="assets/img/icons/logo/logo-4.jpg" alt="Red Bull Racing" height="50">
         <h5>Red <span class="texto-amarillo">Bull</span> Racing</h5>
       </a>
@@ -45,9 +45,12 @@
 </footer>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Dependencia de bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Dependencia para los sms de alerta -->
 <script src="<?= base_url('assets/js/contacto.js'); ?>"></script>
-</body>
+<!-- script para el formulario de contacto.php -->
 
+</body>
 
 </html>
