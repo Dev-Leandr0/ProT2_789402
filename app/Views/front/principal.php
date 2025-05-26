@@ -29,12 +29,12 @@
   </div>
 </section>
 
-<!-- Sección 2 Nuestra Historia "Display flex" -->
+<!-- Sección 2 Quienes Somos "Display flex" -->
 <!-- completado 90% 
  - Ajustar imagen -->
 <section class="nuestra-historia">
   <div class="historia-contenido">
-    <h2 class="border-bottom border-danger pb-2">Sobre Nosotros</h2>
+    <h2 class="border-bottom border-danger pb-2">Quienes Somos</h2>
     <p>
       Desde sus humildes comienzos hasta convertirse en una potencia de la Fórmula 1,
       Red Bull Racing ha demostrado que la pasión, la innovación y el trabajo en equipo
@@ -46,7 +46,7 @@
     </p>
   </div>
   <div class="historia-imagen">
-    <img src="assets/img/icons/logo/logo-4.jpg" alt="Nuestra Historia">
+    <img src="assets/img/icons/logo/logo-4.jpg" alt="Logo Red Bull Racing">
   </div>
 </section>
 
@@ -83,7 +83,7 @@
         <img src="assets/img/perfil/Hannah-Schmitz-1.jpg" class="card-img-top" alt="Pierre Waché">
         <div class="card-body">
           <h5 class="card-title text-danger">Hannah Schmitz</h5>
-          <p class="card-text"> Ingeniera jefe de estrategia principal en Red Bull Racing. </p>
+          <p class="card-text">Ingeniera jefe de estrategia, clave en cada decisión de carrera.</p>
         </div>
       </div>
     </div>
@@ -92,30 +92,33 @@
 
 <!-- Seccion 4 - Logros "Bootstrap puro" -->
 <!-- completado 100% - Posible eliminacion -->
-<section class="container my-3">
+<!-- Sección 4 - Logros Red Bull Racing -->
+<section class="container my-5">
   <h2 class="mb-4 text-uppercase fw-bold text-danger border-bottom border-danger pb-2">Logros Destacados</h2>
   <div class="row">
-    <!-- falta agregar 3 mas  19/05 -->
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
-          <i class="bi bi-trophy-fill text-warning fs-1"></i>
-          <h5 class="card-title mt-3">5 Campeonatos de Constructores</h5>
+          <i class="bi bi-award-fill text-warning fs-1"></i>
+          <h5 class="card-title mt-3">6 Campeonatos de Constructores</h5>
           <p class="card-text">Dominando la Fórmula 1 con ingeniería de vanguardia.</p>
         </div>
       </div>
     </div>
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
-          <i class="bi bi-award-fill text-warning fs-1"></i>
-          <h5 class="card-title mt-3">Premios a la Innovación</h5>
-          <p class="card-text">Reconocimientos internacionales por avances tecnológicos.</p>
+          <i class="bi bi-trophy-fill text-warning fs-1"></i>
+          <h5 class="card-title mt-3">7 Campeonatos de Pilotos</h5>
+          <p class="card-text">Conducidos por leyendas como Vettel y Verstappen.</p>
         </div>
       </div>
     </div>
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
           <i class="bi bi-gear-fill text-success fs-1"></i>
           <h5 class="card-title mt-3">Innovaciones Técnicas</h5>
@@ -123,8 +126,9 @@
         </div>
       </div>
     </div>
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
           <i class="bi bi-flag-fill text-danger fs-1"></i>
           <h5 class="card-title mt-3">Estrategias de Carrera</h5>
@@ -132,26 +136,30 @@
         </div>
       </div>
     </div>
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
-          <i class="bi bi-people-fill text-info fs-1"></i>
-          <h5 class="card-title mt-3">Equipo Humano</h5>
-          <p class="card-text">Un equipo sólido detrás de cada triunfo.</p>
+          <i class="bi bi-stopwatch-fill text-info fs-1"></i>
+          <h5 class="card-title mt-3">Pit Stops Más Rápidos</h5>
+          <p class="card-text">Récords mundiales con detenciones por debajo de los 2 segundos.</p>
         </div>
       </div>
     </div>
+
     <div class="col-md-4 mb-4">
-      <div class="card shadow text-center">
+      <div class="card shadow text-center h-100">
         <div class="card-body">
           <i class="bi bi-speedometer2 text-primary fs-1"></i>
           <h5 class="card-title mt-3">Récords de Velocidad</h5>
-          <p class="card-text">Velocidades récord alcanzadas en pistas.</p>
+          <p class="card-text">Velocidades récord alcanzadas en pistas icónicas.</p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 
 <!-- Lista de cambios 19/05
