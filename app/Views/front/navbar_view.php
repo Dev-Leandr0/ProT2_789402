@@ -22,6 +22,19 @@
         <li class="nav-item">
           <a class="nav-link text-white fw-semibold" href="<?= site_url('contacto') ?>">Contacto</a>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" id="navbarUsuario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Usuario
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUsuario">
+            <li>
+              <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</button>
+            </li>
+            <li>
+              <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</button>
+            </li>
+          </ul>
+        </li>
       </ul>
 
       <form class="d-flex" role="search">
