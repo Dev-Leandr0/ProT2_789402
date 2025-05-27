@@ -142,7 +142,6 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para
 ## 📬 Contacto
 
 Para cualquier duda o comentario, puedes:  
-- Usar el formulario de contacto del sitio.  
 - Abrir un issue en el repositorio.
 
 ---
