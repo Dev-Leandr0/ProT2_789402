@@ -1,60 +1,150 @@
-# CodeIgniter 4 Framework
 
-## What is CodeIgniter?
+# Red Bull Racing Web
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Sitio web temático dedicado a **Red Bull Racing**, desarrollado con **CodeIgniter 4**, que presenta información detallada sobre el equipo, su monoplaza y permite contacto con los visitantes.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+---
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## 📝 Descripción
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Este proyecto es una página web **dinámica** y **responsiva** que muestra diferentes secciones relacionadas con el equipo de Fórmula 1 Red Bull Racing:
 
-## Important Change with index.php
+- Página principal con información sobre el equipo, logros y perfiles clave.
+- Sección dedicada al monoplaza Oracle Red Bull Racing con detalles técnicos y multimedia.
+- Página de contacto con formulario funcional, redes sociales y ubicación geográfica.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4** y se sirve localmente con **XAMPP**. La interfaz se construyó con **Bootstrap 5** y animaciones con **Animate.css**, complementadas con estilos personalizados.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+---
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## 🚀 Tecnologías usadas
 
-## Repository Management
+- CodeIgniter 4  
+- PHP 8+  
+- XAMPP (Apache + MySQL)  
+- Bootstrap 5  
+- Animate.css  
+- Google Fonts (Rajdhani)  
+- Visual Studio Code  
+- Git  
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+---
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+## 📁 Estructura del proyecto
 
-## Contributing
+/app  
+└── /Views  
+  └── /front  
+    ├── head_view.php         # Head HTML con metadatos, estilos y scripts globales  
+    ├── navbar_view.php       # Barra de navegación responsiva y dinámica  
+    ├── footer_view.php       # Pie de página con información y enlaces  
+    ├── form_view.php         # Formularios modales de login y registro  
+    ├── principal.php         # Página principal con banner, equipo y logros  
+    ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza  
+    └── contacto.php          # Página de contacto con formulario, redes y mapa  
 
-We welcome contributions from the community.
+/assets  
+├── css/  
+│  ├── bootstrap.min.css  
+│  └── style.css              # Estilos personalizados para todas las vistas  
+├── js/  
+│  ├── bootstrap.min.js  
+│  ├── contacto.js            # Validación y alertas del formulario de contacto  
+│  └── buscador-navbar.js     # Funcionalidad de buscador en la navbar  
+└── img/  
+  ├── banner/  
+  │  ├── principal/  
+  │  ├── monoplaza/  
+  │  └── contacto/  
+  ├── icons/  
+  │  ├── logo/  
+  │  ├── redes-small/  
+  │  └── redes-medium/  
+  ├── monoplaza/  
+  ├── perfil/  
+  └── videos/  
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+/app/Controllers  
+└── Home.php                 # Controlador que carga vistas para principal, monoplaza y contacto  
 
-## Server Requirements
+/app/Config  
+└── Routes.php               # Define las rutas para cada sección principal  
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+---
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## 📌 Detalles importantes
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+- `head_view.php`: Meta tags, favicon, Bootstrap, Animate.css y fuente Rajdhani de Google Fonts.  
+- `navbar_view.php`: Barra responsive con enlaces dinámicos, menú usuario, buscador y animaciones.  
+- `form_view.php`: Modales de login y registro (Bootstrap) con validaciones y navegación sin recarga.  
+- `principal.php`: Carrusel, sección "Quiénes Somos", perfiles del equipo y logros destacados.  
+- `monoplaza.php`: Imágenes y descripciones técnicas del monoplaza, video y detalles de neumáticos F1.  
+- `contacto.php`: Formulario con validación, enlaces a redes sociales y mapa interactivo del Red Bull Technology Campus.  
+- `Home.php`: Controlador que gestiona vistas principales (carga head, navbar, form, vista específica y footer).  
+- `Routes.php`: Rutas configuradas para acceder a cada sección mediante el controlador.  
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+---
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## ▶️ Cómo ejecutar el proyecto
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/Dev-Leandr0/ProT2_789402.git
+```
+
+2. Coloca la carpeta del proyecto dentro de tu servidor local (por ejemplo, `htdocs` en XAMPP).  
+3. Asegúrate de que Apache y MySQL estén corriendo en XAMPP.  
+4. Configura el archivo `.env` que está en la raíz del proyecto para establecer la baseURL:
+
+```
+app.baseURL = 'http://localhost/ProT2_789402'
+```
+
+5. Accede desde tu navegador a:
+
+```
+http://localhost/ProT2_789402
+```
+
+6. Navega entre las páginas usando la barra de navegación.
+
+---
+
+## 🤝 Cómo contribuir
+
+1. Haz un fork del repositorio.  
+2. Crea una nueva rama:  
+
+```bash
+git checkout -b feature/nombre-de-tu-funcion
+```
+
+3. Realiza tus cambios y haz commits con mensajes claros.  
+4. Envía un pull request describiendo tus modificaciones.
+
+---
+
+## 🐞 Reportar errores o sugerencias
+
+- Abre un **issue** en GitHub con una descripción clara.  
+- Expón el problema o la mejora que propones.  
+- También puedes enviar un pull request con la solución propuesta.
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más información.
+
+---
+
+## 📬 Contacto
+
+Para cualquier duda o comentario, puedes:  
+- Usar el formulario de contacto del sitio.  
+- Abrir un issue en el repositorio.
+
+---
+
+**¡Disfruta explorando Red Bull Racing en la web! 🏁**
