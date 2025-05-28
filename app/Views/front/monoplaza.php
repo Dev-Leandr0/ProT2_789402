@@ -5,19 +5,19 @@
     <div id="banner-carrusel-principal" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/banner/monoplaza/monoplaza-1.jpg" class="d-block w-100" alt="Bienvenidos Oracle Red Bull Racing">
+          <img src="assets/img/banner/monoplaza/monoplaza-1.jpg" class="d-block w-100" alt="Vista panorámica del monoplaza de Oracle Red Bull Racing">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/banner/monoplaza/monoplaza-2.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+          <img src="assets/img/banner/monoplaza/monoplaza-2.jpg" class="d-block w-100" alt="Vista frontal del monoplaza de Oracle Red Bull Racing">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/banner/monoplaza/monoplaza-3.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+          <img src="assets/img/banner/monoplaza/monoplaza-3.jpg" class="d-block w-100" alt="Detalle del alerón delantero del monoplaza de Red Bull">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/banner/monoplaza/monoplaza-4.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+          <img src="assets/img/banner/monoplaza/monoplaza-4.jpg" class="d-block w-100" alt="Vista lateral del monoplaza de Red Bull Racing">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/banner/monoplaza/monoplaza-5.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+          <img src="assets/img/banner/monoplaza/monoplaza-5.jpg" class="d-block w-100" alt="Vista trasera del monoplaza de Red Bull en la pista">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#banner-carrusel-principal" data-bs-slide="prev">
