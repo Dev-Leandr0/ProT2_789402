@@ -873,3 +873,85 @@ h5 {
   color: yellow;
   text-decoration: none;
 }
+
+/* =================================================== */
+/* 9. Pilotos.php                                      */
+/* =================================================== */
+
+/* Contenedor principal */
+#nuestros-pilotos {
+  padding: 1rem;
+}
+
+/* Título de la sección */
+#nuestros-pilotos .titulo-pilotos {
+  color: var(--color-primario);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Imagenes vertical*/
+#nuestros-pilotos .card-img-vertical {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Reutilizamos estilos */
+#nuestros-pilotos .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#nuestros-pilotos .card-text {
+  font-size: 1.3rem;
+}
+
+#nuestros-pilotos .card {
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+#nuestros-pilotos .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(225, 7, 0, 0.668);
+}
+
+#nuestros-pilotos .card-body {
+  padding: 1rem;
+}
+
+#nuestros-pilotos .card-body ul li {
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+/* ==================================================
+  Seccion 3: Estadisticas tabla
+================================================== */
+
+/* Contenedor para pantallas pequeñas */
+.tabla-contenido tbody td,
+.tabla-contenido thead th {
+  font-size: 1.2rem;
+}
+
+.tabla-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-responsive-wrapper table {
+  min-width: 768px;
+  background: var(--fondo-principal);
+}
+
+#estadisticas table tbody tr:hover {
+  background-color: #ffe5e5;
+  transition: background-color 0.3s ease;
+}
