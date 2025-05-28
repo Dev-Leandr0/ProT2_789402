@@ -22,6 +22,15 @@ class Home extends BaseController
         echo view('front/footer_view');
     }
 
+    public function pilotos()
+    {
+        echo view('front/head_view');
+        echo view('front/navbar_view');
+        echo view('front/form_view');
+        echo view('front/pilotos');
+        echo view('front/footer_view');
+    }
+
     public function contacto()
     {
         echo view('front/head_view');
