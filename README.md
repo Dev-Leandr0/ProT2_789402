@@ -52,6 +52,7 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
     ├── form_view.php         # Formularios modales de login y registro  
     ├── principal.php         # Página principal con banner, equipo y logros  
     ├── monoplaza.php         # Sección con descripción y multimedia del monoplaza  
+    ├── pilotos.php           # Cards de pilotos y sección con estadísticas detalladas  
     └── contacto.php          # Página de contacto con formulario, redes y mapa  
 
 /assets  
@@ -64,9 +65,10 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
 │  └── buscador-navbar.js     # Funcionalidad de buscador en la navbar  
 └── img/  
   ├── banner/  
-  │  ├── principal/  
-  │  ├── monoplaza/  
-  │  └── contacto/  
+   │   ├── principal/
+   │   ├── monoplaza/
+   │   ├── contacto/
+   │   └── pilotos/   
   ├── icons/  
   │  ├── logo/  
   │  ├── redes-small/  
