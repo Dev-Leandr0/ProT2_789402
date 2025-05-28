@@ -94,7 +94,7 @@
   <!-- Seccion 4 - Logros "Bootstrap puro" -->
   <!-- completado 100% - Posible eliminacion -->
   <section id="logros-destacados" class="container my-5 seccion-logros-destacados">
-    <h2 class="mb-4 text-uppercase fw-bold text-danger border-bottom border-danger pb-2">Logros Destacados</h2>
+    <h2 class="mb-4 text-uppercase fw-bold text-danger border-bottom border-danger pb-2">Acerca de Nosotros</h2>
     <div class="row">
 
       <div class="col-md-4 mb-4">
