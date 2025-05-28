@@ -20,6 +20,10 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link active text-white fw-semibold" href="<?= site_url('pilotos') ?>">Pilotos</a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link text-white fw-semibold" href="<?= site_url('contacto') ?>">Contacto</a>
 
         <li class="nav-item dropdown">
