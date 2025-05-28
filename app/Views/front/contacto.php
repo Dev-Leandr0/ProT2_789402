@@ -5,10 +5,10 @@
     <div id="banner-carrusel-principal" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/banner/contacto/contacto-1.jpg" class="d-block w-100" alt="Bienvenidos Oracle Red Bull Racing">
+          <img src="assets/img/banner/contacto/contacto-1.jpg" class="d-block w-100" alt="El equipo completo de Oracle Red Bull Racing en la Fórmula 1">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/banner/contacto/contacto-2.jpg" class="d-block w-100" alt="Curiosidades Red Bull Racing">
+          <img src="assets/img/banner/contacto/contacto-2.jpg" class="d-block w-100" alt="Fanáticos de Red Bull con máscaras de toro en un evento de F1">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#banner-carrusel-principal" data-bs-slide="prev">
