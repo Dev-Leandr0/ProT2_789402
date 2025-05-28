@@ -71,9 +71,26 @@ document.getElementById("formulario-busqueda").addEventListener("submit", functi
     "donde encontrarnos": "contacto#contacto-encontranos",
     "encontranos": "contacto#contacto-encontranos",
 
+    // === Pilotos.php ===
+    // seccion 2: Pilotos
+    "piloto": "pilotos#nuestros-pilotos",
+    "pilotos": "pilotos#nuestros-pilotos",
+    "max": "pilotos#nuestros-pilotos",
+    "maxs": "pilotos#nuestros-pilotos",
+    "verstappen": "pilotos#nuestros-pilotos",
+    "yuki": "pilotos#nuestros-pilotos",
+    "tsunoda": "pilotos#nuestros-pilotos",
+
+    // Seccion 3: Estadisticas
+    "carrera": "pilotos#estadisticas",
+    "carreras": "pilotos#estadisticas",
+    "podios": "pilotos#estadisticas",
+    "MVP": "pilotos#estadisticas",
+
     // === form_view.php === (MODAL)
     "login": "form_view#loginModal",
     "iniciar sesion": "form_view#loginModal",
+    "iniciar": "form_view#loginModal",
     "acceder": "form_view#loginModal",
 
     "registro": "form_view#registerModal",
