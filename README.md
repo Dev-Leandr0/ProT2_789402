@@ -65,17 +65,17 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
 │  └── buscador-navbar.js     # Funcionalidad de buscador en la navbar  
 └── img/  
   ├── banner/  
-   │   ├── principal/
-   │   ├── monoplaza/
-   │   ├── contacto/
-   │   └── pilotos/   
+  │  ├── principal/  
+  │  ├── monoplaza/  
+  │  ├── contacto/  
+  │  └── pilotos/  
   ├── icons/  
   │  ├── logo/  
   │  ├── redes-small/  
   │  └── redes-medium/  
   ├── monoplaza/  
   ├── perfil/  
-  └── videos/  
+  └── videos/
 
 /app/Controllers  
 └── Home.php                 # Controlador que carga vistas para principal, monoplaza y contacto  
