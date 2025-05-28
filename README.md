@@ -17,11 +17,22 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
 
 ---
 
+## 🖥️ Entorno de desarrollo
+
+- Sistema operativo: **Ubuntu 24.04.2 LTS**  
+- Servidor local: **XAMPP 8.2.4-0** (Apache + MySQL)  
+- Lenguaje backend: **PHP 8.2.4**  
+- Framework: **CodeIgniter 4.6.1**  
+- Editor de código: **Visual Studio Code 1.100.2**  
+- Control de versiones: **Git 2.49.0**
+
+---
+
 ## 🚀 Tecnologías usadas
 
 - CodeIgniter 4  
 - PHP 8+  
-- XAMPP (Apache + MySQL)  
+- XAMPP (Apache + MySQL)
 - Bootstrap 5  
 - Animate.css  
 - Google Fonts (Rajdhani)  
