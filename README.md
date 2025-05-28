@@ -91,7 +91,8 @@ La aplicación está desarrollada en **PHP** usando el framework **CodeIgniter 4
 - `navbar_view.php`: Barra responsive con enlaces dinámicos, menú usuario, buscador y animaciones.  
 - `form_view.php`: Modales de login y registro (Bootstrap) con validaciones y navegación sin recarga.  
 - `principal.php`: Carrusel, sección "Quiénes Somos", perfiles del equipo y logros destacados.  
-- `monoplaza.php`: Imágenes y descripciones técnicas del monoplaza, video y detalles de neumáticos F1.  
+- `monoplaza.php`: Imágenes y descripciones técnicas del monoplaza, video y detalles de neumáticos F1.
+- `pilotos.php`: Cards de pilotos y sección con estadísticas detalladas.
 - `contacto.php`: Formulario con validación, enlaces a redes sociales y mapa interactivo del Red Bull Technology Campus.  
 - `Home.php`: Controlador que gestiona vistas principales (carga head, navbar, form, vista específica y footer).  
 - `Routes.php`: Rutas configuradas para acceder a cada sección mediante el controlador.  
