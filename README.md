@@ -131,6 +131,32 @@ http://localhost/ProT2_789402
 
 ---
 
+## 🗃️ Configuración de la Base de Datos
+
+⚠️ La base de datos no se incluye directamente en el repositorio. Debes crearla manualmente para probar el login y registro.
+
+### 1. Crear la base de datos
+
+En phpMyAdmin o desde la terminal de MySQL, ejecuta:
+
+```sql
+CREATE DATABASE RedBullRacing;
+```
+
+###  2. Crear la tabla usuarios
+Dentro de la base de datos RedBullRacing, ejecuta:
+
+```sql
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+```
+
 ## 🤝 Cómo contribuir
 
 1. Haz un fork del repositorio.  

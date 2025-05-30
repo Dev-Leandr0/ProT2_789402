@@ -1,78 +1,82 @@
-<!-- Inicio del modal del  login  -->
-<div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 id="loginModalLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar" id="cerrarModalBtn"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" placeholder="correo@ejemplo.com" aria-label="Correo electrónico">
+      <form action="<?= base_url('login') ?>" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="loginEmail" name="email" required>
           </div>
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" placeholder="Contraseña" aria-label="Contraseña">
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" name="password" required>
           </div>
-          <div class="form-options">
-            <label>
-              <input type="checkbox" id="recordarme"> Recuérdame
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="recordarme" name="recordarme">
+            <label class="form-check-label" for="recordarme">
+              Recuérdame
             </label>
-            <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
-          <div class="d-flex justify-content-between mt-3">
-            <button type="submit" class="btn-submit">Iniciar sesión</button>
-            <button type="reset" class="btn btn-secondary">Borrar</button>
+          <div class="mb-3">
+            <a href="#" class="link-primary">¿Olvidaste tu contraseña?</a>
           </div>
-        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary btn-submit">Iniciar Sesión</button>
+          <button type="reset" class="btn btn-secondary">Borrar</button>
+        </div>
+
+      </form>
+      <div class="px-3 pb-3">
         <p class="registro">¿Aún no tienes cuenta? <a href="#" id="abrirRegistro">Registrarme</a></p>
       </div>
     </div>
   </div>
 </div>
-<!-- Fin del modal Login -->
 
-<!-- ------------------------------------------------ -->
-
-<!-- Inicio del modal Registro -->
-<div class="modal" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 id="registerModalLabel">Crear Cuenta</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="registerEmail">Correo electrónico</label>
-            <input type="email" id="registerEmail" placeholder="correo@ejemplo.com" aria-label="Correo electrónico">
+      <form action="<?= base_url('register') ?>" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Registro de Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="registerNombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="registerNombre" name="nombre" required>
           </div>
-          <div class="form-group">
-            <label for="registerPassword">Contraseña</label>
-            <input type="password" id="registerPassword" placeholder="Contraseña" aria-label="Contraseña">
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="registerEmail" name="email" required>
           </div>
-          <div class="form-group">
-            <label for="confirmPassword">Confirmar Contraseña</label>
-            <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" aria-label="Confirmar contraseña">
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="registerPassword" name="password" required>
           </div>
-          <div class="d-flex justify-content-between mt-3">
-            <button type="submit" class="btn-submit">Registrarse</button>
-            <button type="reset" class="btn btn-secondary">Borrar</button>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success btn-submit">Registrarse</button>
+          <button type="reset" class="btn btn-secondary">Borrar</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
-<!-- FIn del MOdal Registro -->
 
-<!-- ------------------------------------------------ -->
-
-<!-- Inicio de configuración botón registro -->
 <script>
+  // Abrir modal de registro y cerrar login
   document.getElementById('abrirRegistro').addEventListener('click', function(e) {
     e.preventDefault();
     var loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
@@ -81,5 +85,15 @@
     var registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
     registerModal.show();
   });
+
+  // Validación de contraseña en formulario de registro
+  document.querySelector('#registerModal form').addEventListener('submit', function(e) {
+    const password = document.getElementById('registerPassword').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+      e.preventDefault();
+      alert('Las contraseñas no coinciden');
+    }
+  });
 </script>
-<!-- Inicio de configuración botón registro -->
