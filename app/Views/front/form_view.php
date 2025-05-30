@@ -22,7 +22,10 @@
             </label>
             <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
-          <button type="submit" class="btn-submit">Iniciar sesión</button>
+          <div class="d-flex justify-content-between mt-3">
+            <button type="submit" class="btn-submit">Iniciar sesión</button>
+            <button type="reset" class="btn btn-secondary">Borrar</button>
+          </div>
         </form>
         <p class="registro">¿Aún no tienes cuenta? <a href="#" id="abrirRegistro">Registrarme</a></p>
       </div>
@@ -55,7 +58,10 @@
             <label for="confirmPassword">Confirmar Contraseña</label>
             <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" aria-label="Confirmar contraseña">
           </div>
-          <button type="submit" class="btn-submit">Registrarse</button>
+          <div class="d-flex justify-content-between mt-3">
+            <button type="submit" class="btn-submit">Registrarse</button>
+            <button type="reset" class="btn btn-secondary">Borrar</button>
+          </div>
         </form>
       </div>
     </div>
