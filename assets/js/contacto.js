@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
           confirmButtonColor: '#0056b3'
         });
 
-        // Si realmente querés enviar el formulario, podés usar:
         // form.submit();
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire({
